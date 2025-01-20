@@ -6,6 +6,8 @@ find_package(ament_cmake REQUIRED)
 ament_export_include_directories(include)
 ament_export_libraries(${PROJECT_NAME})
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall --std=c++14 -fPIC")
+
 ## Sources
 ## Add serial library
 add_library(${PROJECT_NAME}
